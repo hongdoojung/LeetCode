@@ -4,6 +4,6 @@ class Solution:
         length = len(nums)
         for i in range(1, length):
             if nums[i-x] == nums[i-1-x]:
-                nums.pop(i-x)
+                del nums[i-x]
                 x += 1
         return length - x
